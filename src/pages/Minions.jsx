@@ -25,6 +25,13 @@ const Minions = () => {
         <section className="mainSection">
           <table className="employeeTable">
             <tbody className="employeeTableBody">
+              <tr>
+                <th scope="col"> </th>
+                <th scope="col">Name</th>
+                <th scope="col">Title</th>
+                <th scope="col">Emp. ID</th>
+                <th scope="col">Type</th>
+              </tr>
               {console.log('print array ', employees)}
               {employees.map(employee => {
                 return (
@@ -35,9 +42,6 @@ const Minions = () => {
           </table>
         </section>
       </main>
-      <Link className="employeeName" to={'/minion/'}>
-        Link to Minion Page
-      </Link>
     </>
   )
 }
