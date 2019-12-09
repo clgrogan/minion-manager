@@ -14,9 +14,15 @@ body {
 
 .mainSection {
   color: goldenrod;
+  display: flex;
+  justify-content: center;
 }
 .mainSection a {
   color: goldenrod;
+}
+
+.employeeTable {
+  width: 85%;
 }
 
 ul {
@@ -44,6 +50,8 @@ main a {
 .profileImageTd {
   height: 3rem;
   border-radius: 1.5rem;
+  border-style: solid;
+  border-width: 2px;
 }
 
 .personalInfoSection {
@@ -131,5 +139,9 @@ main a {
   .formInputSection > label {
     width: auto;
     padding: 0.2rem 0 0.3rem 0;
+  }
+
+  .employeeTable {
+    width: 95%;
   }
 }
