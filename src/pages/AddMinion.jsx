@@ -44,7 +44,7 @@ const AddMinion = () => {
     e.preventDefault()
     console.log(employee)
     const apiUrl =
-      'https://sdg-staff-directory-app.herokuapp.com/api/GruInc/Employees'
+      'https://sdg-staff-directory-app.herokuapp.com/api/Cow/Employees'
     const resp = await axios.post(apiUrl, employee)
     console.log(resp)
   }
@@ -146,6 +146,28 @@ const AddMinion = () => {
                 (check box for yes)
               </p>
             </label>
+            <label className="phoneNumber">
+              Phone #:
+              <input
+                type="text"
+                name="phoneNumber"
+                id="phoneNumber"
+                value={employee.phoneNumber}
+                onChange={handleInputOnChange}
+                required
+              />
+            </label>
+            <label className="email">
+              Email:
+              <input
+                type="text"
+                name="email"
+                id="email"
+                value={employee.email}
+                onChange={handleInputOnChange}
+                required
+              />
+            </label>
             <label className="ptoHours">
               PTO (Hours):
               <input
@@ -230,17 +252,6 @@ const AddMinion = () => {
                 name="zip"
                 id="zip"
                 value={employee.zip}
-                onChange={handleInputOnChange}
-                required
-              />
-            </label>
-            <label className="phoneNumber">
-              Phone #:
-              <input
-                type="text"
-                name="phoneNumber"
-                id="phoneNumber"
-                value={employee.phoneNumber}
                 onChange={handleInputOnChange}
                 required
               />
