@@ -7,18 +7,36 @@ html {
 }
 
 body {
-  background-color: pink;
+  background-color: rgb(50, 50, 50);
   margin: 0;
   min-height: 100%;
 }
 
+.mainSection {
+  color: goldenrod;
+}
+.mainSection a {
+  color: goldenrod;
+}
+
 ul {
-  background-color: rgb(219, 103, 103);
+  background-color: goldenrod;
   list-style: none;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+}
+
+.titleH1 {
+  margin: 0;
 }
 a {
+  text-decoration: none;
+  color: midnightblue;
+}
+
+main a {
   text-decoration: none;
   color: midnightblue;
 }
@@ -29,8 +47,15 @@ a {
 }
 
 .personalInfoSection {
-  border-style: dotted;
-  border-color: blue;
+  color: goldenrod;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-between;
+}
+.emergencyContactInfo {
+  padding: 1rem 0 2rem 0;
+  color: goldenrod;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -61,9 +86,50 @@ a {
   display: flex;
 }
 
-.formInputSection {
+.addEmployeeForm {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.formInputSection {
+  display: flex;
+  flex-wrap: wrap;
   border-style: solid;
+  border-color: goldenrod;
   background-color: silver;
+  padding: 1rem;
+  margin: 0 1rem 0 1rem;
+}
+
+.formInputSection > label {
+  width: 45%;
+  padding: 0.2rem 0 0.3rem 0;
+}
+.formInputSection > label > input {
+  margin-left: 0.5rem;
+}
+.checkBoxInput {
+  margin-left: 2rem;
+  transform: scale(1.5);
+}
+.addEmployeeBtn {
+  font-size: 1.5rem;
+  border-color: goldenrod;
+  border-width: 3px;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+@media (max-width: 600px) {
+  .formInputSection {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .formInputSection > label {
+    width: auto;
+    padding: 0.2rem 0 0.3rem 0;
+  }
 }
