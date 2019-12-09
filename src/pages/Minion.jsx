@@ -37,7 +37,7 @@ const Minion = props => {
     <>
       {console.log(employee)}
       <main>
-        <section className="mainSection">
+        <section className="mainInfoSection">
           <h1 className="personalInfoHeader">
             {employee.firstName + ' ' + employee.lastName + "'s "}Personal
             Information
